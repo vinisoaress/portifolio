@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;500;600&display=swap');
+
+   
+    * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --cor-primaria: #000000;
+            --cor-secundaria: #B6EADA;
+            --cor-terciaria: #5B8FB9;
+            --cor-hover: #301E67; 
+        }
+        
+        body {
+            /* height: 100vh; */
+            box-sizing: border-box;
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+        }
+
+        .cabecalho {
+            padding: 2% 0 0 13%; 
+        }
+
+        .cabecalho__menu {
+            display: flex;
+            gap: 80px;
+        }
+
+        .cabecalho__menu__link {
+            font-family: 'Kanit', sans-serif;   
+            font-weight: 600;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--cor-terciaria);
+            text-decoration: none;
+        }
+
+
+        .titulo-destaque {
+            display: flex;
+            color: var(--cor-terciaria);;
+        }
+
+        h1{
+            font-weight: bold;
+    }
+
+
+    .apresentacao {
+        padding: 8% 13%;
+        display: flex;
+        align-items: center;
+        gap: 82px;
+        
+    }
+    .apresentacao__conteudo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 2.25rem;
+        font-family: 'Krona One', sans-serif;
+    }
+
+    .apresentacao__conteudo__paragrafo {
+        font-size: 1.5rem;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 200;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-family: 'Kanit', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .apresentacao__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .apresentacao__links__link {
+        /*background-color: #22D4FD;*/
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        border: 2px solid var(--cor-terciaria);
+        width: 50%;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 1.5rem;
+        padding: 21.5px 0;
+        text-decoration: none;
+        color: var(--cor-secundaria);
+        font-family: 'Krona One', sans-serif;
+    }
+
+    .apresentacao__links__link:hover{
+        background-color: var(--cor-hover);
+    }
+
+    .apresentacao__imagem {
+        width: 50%;
+    }
+
+    .rodape {
+        color: var(--cor-primaria);
+        background-color: var(--cor-terciaria);
+        padding: 15px;
+        font-family: 'Krona One', sans-serif;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    @media(max-width:1200px){
+        .cabecalho{
+            padding: 10%;
+        }
+
+        .cabecalho__menu{
+            justify-content: center;
+        }
+
+        .apresentacao{
+            flex-direction: column-reverse;
+            padding: 5%;
+        }
+
+        .apresentacao__conteudo{
+            width: auto;
+        }
+    }
+
+   
